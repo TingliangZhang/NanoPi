@@ -16,6 +16,15 @@ SD卡自带FriendlyCore
 - http://friendlywrt/
 - http://192.168.2.1/
 
+升级所有的软件包
+
+```sh
+opkg update
+opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg upgrade 
+```
+
+
+
 ### 建议的安全性设置
 
 以下设置事项非常建议在将 NanoPi-R2S 接入互联网之前完成，因为在空密码或弱密码的状态下将NanoPi-R2S接入互联网，极易受到网络攻击。
@@ -48,6 +57,11 @@ SD卡自带FriendlyCore
 /etc/init.d/uhttpd restart
 ```
 
+
+
 ## OpenVPN client using LuCI
 
 https://openwrt.org/docs/guide-user/services/vpn/openvpn/client-luci
+
+
+
