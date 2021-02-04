@@ -23,7 +23,13 @@ opkg update
 opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg upgrade 
 ```
 
+升级之后万年起不来，重新烧写固件qwq
 
+[FriendlyCore](http://wiki.friendlyarm.com/wiki/index.php/FriendlyCore_(based_on_ubuntu-core_with_Qt)) (based on ubuntu-core with Qt)是开发用的核心，FriendlyWrt的使用基本上和Openwrt一致。
+
+### 安全的关机操作
+
+进入ttyd终端，输入poweroff命令敲回车，待led灯熄灭，再拔开电源。
 
 
 
