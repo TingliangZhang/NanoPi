@@ -7,7 +7,7 @@
 
 SD卡自带FriendlyCore
 
-
+FriendlyARM   NanoPi R2S 的核心  Rockchip RK3328 是 armv8 架构，所有智能用Openwrt官方的snapshot，还是刷FriendlyWrt吧。
 
 ## 基本使用
 
@@ -22,6 +22,8 @@ SD卡自带FriendlyCore
 opkg update
 opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg upgrade 
 ```
+
+
 
 
 
