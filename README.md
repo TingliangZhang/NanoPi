@@ -16,7 +16,7 @@ FriendlyARM   NanoPi R2S 的核心  Rockchip RK3328 是 armv8 架构，所有智
 - http://friendlywrt/
 - http://192.168.2.1/
 
-升级所有的软件包
+升级所有的软件包（慎用）
 
 ```sh
 opkg update
@@ -26,6 +26,8 @@ opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg upgrade
 升级之后万年起不来，重新烧写固件qwq
 
 [FriendlyCore](http://wiki.friendlyarm.com/wiki/index.php/FriendlyCore_(based_on_ubuntu-core_with_Qt)) (based on ubuntu-core with Qt)是开发用的核心，FriendlyWrt的使用基本上和Openwrt一致。
+
+
 
 ### 安全的关机操作
 
@@ -71,5 +73,11 @@ opkg list-upgradable | cut -f 1 -d ' ' | xargs opkg upgrade
 
 https://openwrt.org/docs/guide-user/services/vpn/openvpn/client-luci
 
+Install [openvpn-openssl](https://openwrt.org/packages/pkgdata/openvpn-openssl) and [luci-app-openvpn](https://openwrt.org/packages/pkgdata/luci-app-openvpn) to be able to manage OpenVPN using web interface.
 
+```sh
+opkg update
+opkg install openvpn-openssl
+opkg install luci-app-openvpn
+```
 
